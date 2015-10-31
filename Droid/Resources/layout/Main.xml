@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+    <LinearLayout
+        android:id="@+id/layoutRideNowDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_above="@+id/layoutRide"
+        android:visibility="invisible">
+        <Button
+            android:id="@+id/btnRateCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rate Card"
+            android:textAllCaps="false"
+            android:layout_marginTop="0.0dp"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/btnFareEstimate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fare Estimate"
+            android:textAllCaps="false"
+            android:layout_marginRight="0.0dp"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/btnApplyCoupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apply Coupon"
+            android:textAllCaps="false"
+            android:layout_marginTop="0.0dp"
+            android:visibility="visible"
+            android:contextClickable="true"
+            android:editable="false"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutCabDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_above="@+id/layoutRide">
+        <Button xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/txtMini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mini"
+            android:textAllCaps="false"
+            android:layout_marginTop="0.0dp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+        <Button
+            android:id="@+id/txtPrime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prime"
+            android:textAllCaps="false"
+            android:layout_marginRight="0.0dp"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/txtSedan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sedan"
+            android:textAllCaps="false"
+            android:layout_marginTop="0.0dp"
+            android:visibility="visible"
+            android:contextClickable="true"
+            android:editable="false"
+            android:textIsSelectable="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutRide"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ride Now"
+            android:textAllCaps="false"
+            android:background="#ffcd6354"
+            android:layout_marginRight="2.0dp"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/btnBookLater"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ride Later"
+            android:textAllCaps="false"
+            android:background="#ffcd6354"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout>
